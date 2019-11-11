@@ -91,10 +91,10 @@ if nowdict.__contains__(userCharacter) == True:
     for n in range(0,int(len(objectmom)/2)+1):
         str1 = objectmom[i:i+2]                         #divide 8 charactors to 4 2-charactor
         #print(str1[0])
-            Obbin1=bin(int(str1[0],16))                 #conver first hex number to bin
-            bin1=Obbin1[2:]                             #remove '0b'
-            Obbin2=bin(int(str1[1],16))                 #conver second hex number to bin
-            bin2=Obbin2[2:]
+        Obbin1=bin(int(str1[0],16))                 #conver first hex number to bin
+        bin1=Obbin1[2:]                             #remove '0b'
+        Obbin2=bin(int(str1[1],16))                 #conver second hex number to bin
+        bin2=Obbin2[2:]
         trans8to2='0'*(4-len(bin1))+bin1+'0'*(4-len(bin2))+bin2    #add proper '0' making the number 4-digit
         s2l=list(trans8to2)  #convert string to int, then to list
         listSToListI=[int(m) for m in s2l ]
