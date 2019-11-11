@@ -7,7 +7,7 @@ import time
 #Task1
 oldf1 = open('2000_BoysNames.txt','r')
 newf1 = open('2000_BoysNames2.txt','w')
-newf1.write('Fist Name,Count'+'\n')
+newf1.write('First Name,Count'+'\n')
 
 
 for a in oldf1:
@@ -20,7 +20,7 @@ os.rename('2000_BoysNames2.txt','2000_BoysNames.csv')
 
 oldf2 = open('2000_GirlsNames.txt','r')
 newf2 = open('2000_GirlsNames2.txt','w')
-newf2.write('Fist Name,Count'+'\n')
+newf2.write('First Name,Count'+'\n')
 
 
 for a in oldf2:
